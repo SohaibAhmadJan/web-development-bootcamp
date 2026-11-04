@@ -1,0 +1,92 @@
+/* 1. Global Reset: Removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Base Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 3. Header & Navigation (Flexbox Layout) */
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Pushes logo to left, menu to right */
+    align-items: center;            /* Vertically aligns content */
+    padding: 20px 10%;              /* Top/Bottom and Left/Right margins */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle bottom shadow */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;    /* Makes list items sit side-by-side */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Spaces out navigation links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: #555555;
+    font-weight: 600;
+}
+
+/* Changes text color when you hover over navigation links */
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* 4. Hero Section (Centering Content) */
+.hero {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    min-height: 80vh;        /* Takes up 80% of the screen height */
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px; /* Prevents text from spreading too wide */
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* 5. Button Component styling */
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 5px; /* Rounds the corners of the button */
+    font-weight: bold;
+}
+
+/* Makes the button darker when hovered */
+.cta-button:hover {
+    background-color: #2980b9;
+}
